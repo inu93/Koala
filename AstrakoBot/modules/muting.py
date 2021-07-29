@@ -78,7 +78,7 @@ def mute(update: Update, context: CallbackContext) -> str:
         bot.restrict_chat_member(chat.id, user_id, chat_permissions)
         bot.sendMessage(
             chat.id,
-            f"Muted <b>{html.escape(member.user.first_name)}</b> karena muka nya kayak kontoll 🐨!",
+            f"Muted <b>{html.escape(member.user.first_name)}</b> karena berisik!",
             parse_mode=ParseMode.HTML)
         return log
 
