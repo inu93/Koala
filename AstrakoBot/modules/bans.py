@@ -46,7 +46,7 @@ def ban(update: Update, context: CallbackContext) -> str:
             raise
 
     if user_id == bot.id:
-        message.reply_text("gw banned lu kampang 😡")
+        message.reply_text("gw banned lu bajingan 😡")
         return log_message
 
     if is_user_ban_protected(chat, user_id, member) and user not in DEV_USERS:
@@ -86,7 +86,7 @@ def ban(update: Update, context: CallbackContext) -> str:
         chat.kick_member(user_id)
         # bot.send_sticker(chat.id, BAN_STICKER)  # banhammer marie sticker
         reply = (
-            f"<code>❕🐨</code><b>Ban Jamet Duls Gaes</b>\n"
+            f"<code>❕</code><b>Ban bajingan</b>\n"
             f"<code> </code><b>•  User:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
         )
         if reason:
