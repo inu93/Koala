@@ -53,14 +53,10 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 
 Hi {}, nama saya {}!
-Saya adalah robot yang bisa memecahkan biji peler mu. 
-Saya ada untuk membantai para parasit telegram.
-Dibuat khusus untuk memberantas jamet tele kampang yang meresahkan.
-Saya hanya robot tapi juga bisa sange, jangan lupa pap tt ya asu!!
+Saya adalah robot yang dapat mengelola grup Anda dengan fitur-fitur yang berguna, jangan ragu untuk menambahkan saya ke grup Anda
 ━─━─━─━─━─━─━─━─━─━─━
 
-▪**Managed with by:** [KOALA🐨](https://t.me/manusiarakitann)
-▪**JOIN MY CH OFFICIAL:** [CTH](http://t.me/caritemanhidupofficial)
+▪**Managed by:** [Ebnu](https://t.me/ebnudoang)
 
 ━─━─━─━─━─━─━─━─━─━─━
 Tekan /help untuk melihat daftar fitur saya.
@@ -68,9 +64,8 @@ Tekan /help untuk melihat daftar fitur saya.
 
 HELP_STRINGS = """
 Hai! Nama saya adalah *{}*.
-Saya adalah manusia robot dengan beberapa kelebihan yang menyenangkan! Silahkan lihat berikut ini untuk beberapa ide dari \
-hal-hal yang bisa saya bantu.
-
+Saya bot manajemen grup dengan ekstra yang bermanfaat dan menyenangkan!
+Anda dapat membaca panduan di bawah ini, dengan mengklik tombol.
 *Perintah utama* yang tersedia:
  - /start: mulai bot
  - /help: PM Anda dengan pesan ini.
@@ -86,12 +81,10 @@ Dan berikut ini:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-ASTRAKOBOT_IMG = "https://i.ibb.co/9gqtY04/IMG-20210129-004109-607.jpg"
+ASTRAKOBOT_IMG = "https://telegra.ph/file/d0b6ec78b7975968a7d65.jpg"
 
-DONATE_STRING = """Silahkan Donasi Ke sini 
-biar gw bisa update sistem bot nya lagi ya asu.. 
-kalau ga mau donasi dahlah kalau error gausah ngeluh kontol. 
-user gratisan gausah sok keras; [KOALA 🐨](https://t.me/manusiarakitann), or [SUBS MY CH](https://t.me/caritemanhidupofficial)."""
+DONATE_STRING = """senang mendengar Anda ingin menyumbang!
+ Anda dapat mendukung proyek melalui [Ebnu](https://t.me/ebnudoang), atau [SUBS MY CH](https://t.me/Katakatauntukmu)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -215,8 +208,8 @@ def start(update: Update, context: CallbackContext):
                     ],
                      [
                          InlineKeyboardButton(
-                             text="👥 CTH Grup",
-                             url=f"https://t.me/caritemanhidop"),
+                             text="👤 Ebnu",
+                             url=f"https://t.me/ebnudoang"),
                      
                          InlineKeyboardButton(
                              text="🍭 Help & Command",
@@ -224,8 +217,8 @@ def start(update: Update, context: CallbackContext):
                      ],
                      [
                          InlineKeyboardButton(
-                             text="🚫 Gban Logs",
-                             url="https://t.me/joinchat/SKYP-Hv8tqZ-UvYq")
+                             text="Instagram",
+                             url="https://www.instagram.com/ebnu_am/")
                      ]]))
     else:
         update.effective_message.reply_text(
